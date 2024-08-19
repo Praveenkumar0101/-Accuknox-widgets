@@ -1,0 +1,117 @@
+/* category.css */
+
+/* Container for widgets */
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+/* Standard widget styles */
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; 
+  height: 150px; 
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+}
+
+/* Styling for the "+" button when adding a widget */
+.add-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; 
+  height: 150px; 
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #007bff;
+  font-size: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-widget:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Styling for the form used to add new widgets */
+.add-widget-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 150px; 
+  height: 150px; 
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.add-widget-form input,
+.add-widget-form textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 10px); 
+  font-size: 12px;
+}
+
+.add-widget-form textarea {
+  resize: none;
+  height: 50px; 
+}
+
+.add-widget-form button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+}
+
+.add-widget-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel button styling */
+.cancel-button {
+  background-color: #6c757d;
+  margin-top: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Content inside the widget */
+.widget-content {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for the widget name */
+.widget-content h3 {
+  margin: 0 0 2px; 
+  font-size: 16px;
+}
+
+/* Styling for the widget content */
+.widget-content p {
+
+  margin: 50px;
+  font-size: 14px;
+  line-height: 1.5;
+}
